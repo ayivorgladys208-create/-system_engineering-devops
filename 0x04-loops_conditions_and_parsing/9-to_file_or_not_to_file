@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script checks properties of the 'school' file
+if [ -e school ]; then
+    if [ -f school ]; then
+        echo "school is a regular file"
+    elif [ -d school ]; then
+        echo "school is a directory"
+    fi
